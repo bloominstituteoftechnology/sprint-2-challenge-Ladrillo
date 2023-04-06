@@ -85,7 +85,9 @@
       //    * If the profile is active but it has a `reason` prop, return the string "confirm status manually"
       //    * If the profile is **missing** an `active` prop, return the string "impossible to ascertain status"
       // 🌟 HINT: to confirm the existence of a prop, check that its value is not undefined
-      if (!profile.active) return "impossible to ascertain status"
+      if (profile.active === undefined) return "impossible to ascertain status"
+      if (!profile.active && profile.reason === undefined) return "confirm status manually"
+      return profile
     }
 
     // 👉 CHALLENGE 2
