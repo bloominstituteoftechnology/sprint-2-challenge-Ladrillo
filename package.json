@@ -1,5 +1,5 @@
 {
-  "name": "codegrade",
+  "name": "sprint-2-challenge",
   "devDependencies": {
     "jest": "29.5.0",
     "jsdom": "21.1.0"
