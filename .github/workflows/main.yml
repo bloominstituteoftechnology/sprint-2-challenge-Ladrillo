@@ -22,7 +22,7 @@ jobs:
     - name: STUDENT, FIND YOUR TEST RESULTS HERE! 🧪
       run: |
         set +e  # Prevent script from stopping on errors
-        npx jest -- mvp.test.js --json --outputFile=results.json
+        npx jest mvp.test.js --json --outputFile=results.json
         exit_code=$?
         echo "ERROR_FLAG=$exit_code" >> $GITHUB_ENV
         set -e  # Re-enable script stopping on errors
