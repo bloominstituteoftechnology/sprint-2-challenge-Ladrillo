@@ -1,14 +1,3 @@
-/*
-Global setup script
-curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash - && sudo apt-get install -y nodejs; cg-jest install; npm i -g jest@29.5.0
-
-Per-student setup script
-mv $FIXTURES/* . && npm install
-
-Auto-test script
-NODE_ENV=codegrade cg-jest run -- codegrade.test.js --forceExit --silent
-*/
-
 const { JSDOM } = require('jsdom')
 const fs = require('fs')
 
